@@ -4,7 +4,7 @@ import ImageSourceEnum from '../app/enum/ImageSourceEnum';
 
 const checkImageResized = async (
     image: Image
-): Promise<Boolean> => {
+): Promise<boolean> => {
     console.log('Process check image exist in cache');
     const cachedFiles = await fs.readdir(ImageSourceEnum.RESIZED_IMAGES);
     const file = cachedFiles.find(

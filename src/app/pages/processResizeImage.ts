@@ -10,7 +10,7 @@ import ImageSourceEnum from '../enum/ImageSourceEnum';
 const processResizeImage = async (
     req: express.Request,
     res: express.Response,
-    next: Function,
+    next: () => void,
 ): Promise<void> => {
     console.log('Process resize image');
 

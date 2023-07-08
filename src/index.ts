@@ -1,11 +1,11 @@
 import express from 'express';
-import image from "./routes/image";
+import image from './routes/image';
 import morgan from 'morgan';
 
 const app = express();
 const port = 3000;
 
-app.use(morgan('combined'))
+app.use(morgan('combined'));
 
 app.get('/', function (req: express.Request, res: express.Response): void {
     res.send(
@@ -13,7 +13,7 @@ app.get('/', function (req: express.Request, res: express.Response): void {
     );
 });
 
-app.use("/api", image);
+app.use('/api', image);
 
 //server configuration
 app.listen(port, () =>

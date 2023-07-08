@@ -4,9 +4,9 @@ import Image from '../../app/models/Image';
 describe('Test function resizeImage', () => {
     it('Return resized image', async () => {
         //Initialization image
-        const width: number = 500;
-        const height: number  = 500;
-        const imageName: string = 'spiderman.png';
+        const width = 500;
+        const height  = 500;
+        const imageName = 'spiderman.png';
         const image : Image = {imageName, width, height};
         const result = await resizeImage(image);
         expect(result).toEqual(

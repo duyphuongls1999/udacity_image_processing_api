@@ -7,8 +7,9 @@
     "start": "tsnd --respawn --inspect -- src/index.ts",
     "build": "tsc -p .",
     "test": "npm run build && npm run jasmine",
-    "beautiful": "lint-staged",
-    "jasmine": "jasmine"
+    "prettier": "lint-staged",
+    "jasmine": "jasmine",
+    "lint": "eslint  . --ext .ts"
   },
   "lint-staged": {
     "src/**/*.{js,json,ts}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
@@ -30,21 +31,16 @@
     "supertest": "^6.3.3"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.6",
     "@types/express": "^4.17.17",
     "@types/jasmine": "^4.3.5",
     "@types/morgan": "^1.9.4",
     "@types/sharp": "^0.32.0",
     "@types/supertest": "^2.0.12",
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.60.1",
-    "eslint": "^8.43.0",
+    "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
     "morgan": "^1.10.0",
-    "prettier": "^2.8.8",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.1.6"
   }

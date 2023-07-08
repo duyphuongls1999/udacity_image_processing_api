@@ -13,7 +13,8 @@ In the project directory, you can run the following scripts:
 - `npm run start`: Starts the server
 - `npm run test`: Compiles the TypeScript code to JavaScript and runs the unit tests
 - `npm run build`: Compiles the TypeScript code to JavaScript
-- `npm run beautiful`: Run to reformat codes according to the pattern after codes has been changed and added to git
+- `npm run prettier`: Run to reformat codes according to the pattern after codes has been changed and added to git
+- `npm run lint`: Run to identify and report syntax errors, potential bugs, and code style violations
 
 ## Usage
 The server will listen on port 3000:
